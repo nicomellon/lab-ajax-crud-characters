@@ -13,6 +13,20 @@
       "occupation": "Jedi Knight",
       "weapon": "Lightsaber",
       "cartoon": false
+    },
+    {
+      "name": "Nico",
+      "occupation": "Music",
+      "weapon": "Bass",
+      "cartoon": "on",
+      "id": 3
+    },
+    {
+      "name": "Tom",
+      "occupation": "Ladams",
+      "weapon": "FIre",
+      "cartoon": "on",
+      "id": 4
     }
   ]
 }

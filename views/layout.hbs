@@ -41,7 +41,12 @@
     <section class="container">
       <section class="form-container">
         <h2>New Character</h2>
-        <form id="new-character-form" class="character-form">
+        <form
+          id="new-character-form"
+          class="character-form"
+          {{! action="/characters" }}
+          method="POST"
+        >
           <div class="field">
             <label for="name">Name: </label>
             <input type="text" name="name" />

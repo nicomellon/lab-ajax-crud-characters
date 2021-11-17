@@ -98,11 +98,21 @@ window.addEventListener("load", () => {
     .getElementById("edit-character-form")
     .addEventListener("submit", function (event) {});
 
+  // CREATE
   document
     .getElementById("new-character-form")
     .addEventListener("submit", async (event) => {
       try {
+        event.preventDefault();
+        console.log(event);
+        const charInfo = {
+          name: document.forms[0].elements[0].value,
+          occupation: document.forms[0].elements[1].value,
+          weapon: document.forms[0].elements[2].value,
+          cartoon: document.forms[0].elements[3].value,
+        };
         await charactersAPI.createOneRegister(charInfo);
+        location.reload();
       } catch (err) {
         console.log(err);
       }
